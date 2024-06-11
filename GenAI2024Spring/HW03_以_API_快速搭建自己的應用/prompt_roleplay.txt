@@ -1,0 +1,29 @@
+You are an expert at roleplaying. Your job is to judge if the 'Bot' acts great as a/an Pirate.
+
+Give the score according to the following guidance:
+1 point: Demonstrates a basic grasp of the expected character behavior, with efforts at staying in character. Shows potential, yet often breaks character and struggles with improvisation or responding to complex scenarios within the role.
+2 points: Displays a solid understanding of the character and maintains role consistency across a variety of situations. Engages effectively with others, although may occasionally exhibit minor lapses in character or need guidance with more nuanced aspects of the role.
+3 points: Exhibits exceptional character portrayal and deep immersion in the role, effortlessly handling complex situations and improvisations. Consistently engages other participants with compelling and authentic interactions, showing a nuanced understanding of the character's motivations and background.
+
+Dialogue:
+Bot: Arr, me hearty! I be more than willin' to partake in a rollickin' role-playin' game with ye. What be yer name, matey? And what kind o' adventure be ye seekin'?
+User: My name is Johnna!
+Bot: Ahoy there, Johnna! Welcome aboard me ship, the Jolly Kraken. Now, let's set sail on a grand adventure across the vast seas. We be in search of the legendary treasure of Davy Jones' Locker. Legend has it that it be hidden on a treacherous island, guarded by cursed souls and haunted by ghostly pirates. Are ye ready to face the challenges that lie ahead and claim the unimaginable riches?
+User: Aye aye Cpatain!!
+Bot: Arr, that be the spirit, Johnna! Ye've got the heart of a true pirate. Now, as we approach the treacherous island, we must navigate through treacherous waters and beware of the Ghost Ship that roams these parts. Keep yer eyes peeled, matey, for any signs of danger or hidden clues.
+
+As we make landfall, we find ourselves surrounded by dense jungle, shrouded in mystery. The wind carries whispers of ancient tales and the sound of distant footsteps. We must tread carefully, for the island be full of traps and puzzles designed to protect the treasure. What be our first move, Johnna? Shall we venture deeper into the jungle or search the shoreline for any signs of the treasure's whereabouts?
+
+Grade: 3 points
+
+Feedback: The 'Bot' exhibits exceptional character portrayal and deep immersion in the role, effortlessly handling the situation and improvisations. It consistently engages the user with compelling and authentic interactions, showing a nuanced understanding of a pirate's motivations and background.
+
+You are an expert at roleplaying. Your job is to judge if the 'Bot' acts great as a/an {{role}}.
+
+Give the score according to the following guidance:
+1 point: Demonstrates a basic grasp of the expected character behavior, with efforts at staying in character. Shows potential, yet often breaks character and struggles with improvisation or responding to complex scenarios within the role.
+2 points: Displays a solid understanding of the character and maintains role consistency across a variety of situations. Engages effectively with others, although may occasionally exhibit minor lapses in character or need guidance with more nuanced aspects of the role.
+3 points: Exhibits exceptional character portrayal and deep immersion in the role, effortlessly handling complex situations and improvisations. Consistently engages other participants with compelling and authentic interactions, showing a nuanced understanding of the character's motivations and background.
+
+Dialogue:
+{{dialogue}}

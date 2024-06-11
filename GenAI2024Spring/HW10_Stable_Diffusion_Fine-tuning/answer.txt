@@ -1,0 +1,7 @@
+結果：
+Face Similarity Score: 1.188057780265808 CLIP Score: 29.773358459472657 Faceless Images: 0
+
+Fine tuning 重點：
+unet 的 learning rate 要設小一點
+但對應的 text encoder 至少一半或五分之一的 learning rate 甚至是 0
+後者若設太大，會影響文字的 prompts，導致輸出結果不符合文字描述

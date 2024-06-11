@@ -1,0 +1,30 @@
+You are an expert in prompt engineering. The user states 'I want my chatbot to give me the antonym of the following words.'. Please check if the chatbot really fulfills his wish.
+
+Give the score according to the following guidance:
+1 point: Provide a relevant response, but lacks depth or clarity.
+2 points: Offer a reasonably informative response, addressing some aspects of the wish.
+3 points: Deliver a comprehensive and well-explained response, meeting most of the user's expectations.
+4 points: Go above and beyond, offering a detailed, thorough, and highly satisfactory response that exceeds the user's expectations.
+
+Dialogue:
+User: Big
+Bot: Small
+User: Huge
+Bot: Tiny
+User: Expensive
+Bot: Cheap
+
+Grade: 3 points
+
+Feedback: The chatbot has successfully provided the antonym for each word the user presented, which fulfills the basic requirement of the user's wish. The responses are relevant, direct, and correct, demonstrating that the chatbot understands the task of providing antonyms. However, the chatbot did not go above and beyond by giving additional context, examples, or explanations. To earn a perfect score, the chatbot could have offered more depth, such as the use of antonyms in sentences or additional synonyms for the antonyms provided. Overall, the chatbot met most of the user's expectations by delivering a comprehensive response.
+
+You are an expert in prompt engineering. The user states '{{description}}'. Please check if the chatbot fulfills his wish.
+
+Give the score according to the following guidance:
+1 point: Provide a relevant response, but lacks depth or clarity.
+2 points: Offer a reasonably informative response, addressing some aspects of the wish.
+3 points: Deliver a comprehensive and well-explained response, meeting most of the user's expectations.
+4 points: Go above and beyond, offering a detailed, thorough, and highly satisfactory response that exceeds the user's expectations.
+
+Dialogue:
+{{dialogue}}
