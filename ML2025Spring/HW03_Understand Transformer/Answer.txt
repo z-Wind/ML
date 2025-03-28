@@ -1,0 +1,425 @@
+Problem 1 - Chat template Comparison (1pt)
+Task Descriptions:
+Observations of response with/without chat template.
+Prompt:
+“Please tell me about the key differences between supervised learning and unsupervised learning. Answer in 200 words.”
+Questions:
+Calculate and compare the coherence score between responses generated with and
+without the chat template.
+1. (0.2 + 0.2 pts) What is each coherence score? (Error with 0.5 is accepted.) (Fill-in-the-blank question)
+	With chat template: 6.3737
+	Without chat template: 4.2210
+2. (0.3 pts) Which score is higher? (Multiple-Choice Question)
+	With chat template
+3. (0.3pts) Choose the correct statement(s) from the following according to the experiment. Please choose EXACT 2 answers. (Multiple-Choice Question)
+
+Problem 2 - Multi-turn Conversations (1pt)
+Task Descriptions:
+Observe the response from the following multi-turn conversation. You should check the possibility of the model response and the format of the prompt inputted to the model.
+Conversation History:
+User (Your 1st Input): “Name a color in a rainbow, please just answer in a word without any emoji.”
+Model 1st output : xxxx.
+User (Your 2nd Input): “That’s great! Now, could you tell me another color that I can find in a rainbow?”
+Model 2nd output : xxxx.
+User (Your 3rd Input): “Could you continue and name yet another color from the rainbow?”
+Model 3rd output : xxxx. 
+Questions:
+1. (0.4 pt) Provide the correct FULL prompt with chat template format for the third round. (Fill-in-the-blank question)
+	<bos><start_of_turn>user
+	Name a color in a rainbow, please just answer in a word without any emoji.<end_of_turn>
+	<start_of_turn>model
+	Indigo<end_of_turn>
+	<start_of_turn>user
+	That’s great! Now, could you tell me another color that I can find in a rainbow?<end_of_turn>
+	<start_of_turn>model
+	Orange<end_of_turn>
+	<start_of_turn>user
+	Could you continue and name yet another color from the rainbow?<end_of_turn>
+	<start_of_turn>model
+2. (0.2 pt) What is the first token with the highest probability in the first round (question)? (Multiple-Choice Question)
+	Indigo
+3. (0.4 pt) Please select the false statement from the following according to the experiments. (Multiple-Choice Question)
+
+Problem 3 - tokenization of a sentence (0.5pt)
+Prompt:
+"I love taking a Machine Learning course by Professor Hung-yi Lee, What about you?"
+Fill-in-the-blank Questions:
+How is the prompt being tokenized into? Please write the corresponding token index. 
+
+Fill-in-the-blank Questions:
+(2 * 0.1 pt + 2 * 0.15 pt) You need to write the corresponding token / token index.
+	Token: I, token index: 235285
+	Token:  love, token index: 2182
+	Token:  taking, token index: 4998
+	Token:  a, token index: 476
+	Token:  Machine, token index: 13403
+	Token:  Learning, token index: 14715
+	Token:  course, token index: 3205
+	Token:  by, token index: 731
+	Token:  Professor, token index: 11325
+	Token:  Hung, token index: 18809
+	Token: -, token index: 235290
+	Token: yi, token index: 12636
+	Token:  Lee, token index: 9201
+	Token: ,, token index: 235269
+	Token:  What, token index: 2439
+	Token:  about, token index: 1105
+	Token:  you, token index: 692
+	Token: ?, token index: 235336
+
+Problem 4 - Autoregressive Generation (1.4pt)
+Task Descriptions:
+- Use auto-regressive generation to generate a sentence 20 times.
+- Calculate the self-BLEU score for the 20 sentences.
+- Compare Top-k sampling (k=2) vs. Top-k sampling (k=200)
+- Compare Top-p sampling (p=0.6) vs Top-p sampling (p=0.999)
+- Observe fluency, coherence, and diversity.
+Prompt:
+"Generate a paraphrase of the sentence 'Professor Lee is one of the best teachers in the domain of machine learning'. Just response with one sentence."
+Questions:
+1. (0.25 pt) Please choose the correct statement(s) about self-BLEU score? You should choose EXACT 2 answers. (Multiple-Choice Question)
+	### **什麼是 Self-BLEU？**
+	**Self-BLEU（Self-Bilingual Evaluation Understudy Score）** 是一種評估文本 **多樣性（diversity）** 的指標，主要用於 **自然語言生成（NLG, Natural Language Generation）** 來衡量 **模型產生的文本是否具有足夠的變化性**。
+
+	---
+
+	### **Self-BLEU 的概念**
+	- **傳統 BLEU 分數** 用於評估生成文本與 **參考文本（reference）** 之間的相似度，**數值越高表示生成的文本越接近人類標準**。
+	- **Self-BLEU 則用 BLEU 來評估一組生成樣本之間的相似性**：
+	  - 如果一組樣本之間的 Self-BLEU 高，**表示這些文本很相似，模型缺乏多樣性（diversity 低）**。
+	  - 如果 Self-BLEU 低，**表示這些文本差異較大，模型能夠產生多樣化的輸出（diversity 高）**。
+
+	---
+
+	### **Self-BLEU 的計算方法**
+	1. **將一組模型生成的樣本視為參考文本（reference set）**。
+	2. **對於每個樣本 `S_i`，計算 BLEU，將 `S_i` 當作候選文本（candidate），其他樣本 `S_j`（`j ≠ i`）當作參考文本（references）**。
+	3. **對所有 `S_i` 計算的 BLEU 取平均值**：
+	   \[
+	   \text{Self-BLEU} = \frac{1}{N} \sum_{i=1}^{N} BLEU(S_i, \{S_j | j \neq i\})
+	   \]
+
+	---
+
+	### **Self-BLEU 的應用**
+	- **在文本生成（如 Chatbot、摘要、故事生成）** 中，Self-BLEU 可用於衡量模型是否過於重複，是否能夠產生多樣的回應。
+	- **在語言模型（如 GPT、T5）訓練時**，用來檢測模型是否過度擬合（overfitting），因為 **如果 Self-BLEU 高，可能代表模型產生的文本過於單一**。
+	- **在生成式對抗網絡（GANs）應用於文本生成時**，Self-BLEU 常用於衡量模型是否能生成有變化的文本。
+
+	---
+
+	### **Self-BLEU 的解釋**
+	- **數值範圍：0（完全不同）~ 1（完全相同）**：
+	  - **Self-BLEU 越高** → 代表文本的相似度越高，**多樣性低**。
+	  - **Self-BLEU 越低** → 代表文本的相似度越低，**多樣性高**。
+
+	---
+
+	### **Self-BLEU vs. BLEU**
+	| **指標** | **用於評估** | **數值高的意義** |
+	|----------|------------|----------------|
+	| **BLEU** | 生成文本與 **目標文本** 的相似度 | 模型生成文本更接近人類標準 |
+	| **Self-BLEU** | 生成文本 **彼此之間** 的相似度 | 模型生成的文本缺乏多樣性 |
+
+	---
+
+	### **總結**
+	- **Self-BLEU 衡量生成文本的多樣性（diversity）**。
+	- **Self-BLEU 高 → 多樣性低（重複度高），Self-BLEU 低 → 多樣性高（文本變化大）**。
+	- **適用於語言模型、生成模型的評估，避免模型過度重複生成內容**。
+
+	如果你的目標是生成更有變化的文本，你應該 **降低 Self-BLEU**，例如：
+	1. **增加訓練數據的多樣性**。
+	2. **使用不同的溫度（temperature）和 Top-K/Top-P 取樣策略**。
+	3. **引入對比學習（contrastive learning）來提升模型的變化性**。
+
+2. (0.25 pt) Choose the correct statement about top-p and top-k? You should choose EXACT 2 answers. (Multiple-Choice Question)
+	top-p: 選擇機率總和直到 ≥ p 的前幾名
+	top-k: 選擇前 k 名
+3. (0.2 pt) What is the generated sentence of top-k for k = 1? (Fill-in-the-blank Question)
+	Professor Lee is highly regarded as a leading expert in machine learning education.
+4. (0.2 pt) What is the generated sentence of top-p for p = 0? (Fill-in-the-blank Question)
+	Professor Lee is highly regarded as a leading expert in machine learning education.
+5. (0.25 pt) Compare the self-BLEU score of top-k for different k values ( 2 vs 200 ), which is higher and why? (Multiple-Choice Question)
+	self-BLEU Score for top_k (k=2): 0.2259
+	self-BLEU Score for top_k (k=200): 0.0707
+	k=2 多樣性低，故 Self-BLEU 高
+6. (0.25 pt) Compare the self-BLEU score of top-p for different p values ( 0.6 vs 0.999 )? Which is higher and why? (Multiple-Choice Question)
+	self-BLEU Score for top_p (p=0.6): 0.4533
+	self-BLEU Score for top_p (p=0.999): 0.0807
+	p=0.6 多樣性低，故 Self-BLEU 高
+
+Problem 5 - t-SNE (1pt)
+Task Descriptions:
+Plotting the t-SNE 2-D Embeddings
+Sentences: (Provided in sample code)
+ "I ate a fresh apple.", # Apple (fruit)
+ "Apple released the new iPhone.", # Apple (company)
+ "I peeled an orange and ate it.", # Orange (fruit)
+ "The Orange network has great coverage.", # Orange (telecom)
+ "Microsoft announced a new update.", # Microsoft (company)
+ "Banana is my favorite fruit.", # Banana (fruit)
+Questions:
+1. (0.4 pt) Choose the correct statements about T-SNE. You should choose EXACT 2 answers. (Multiple-Choice Question)
+2. (0.3 pt) Please choose the correct statement about the experiment in Q5. (Multiple-Choice Question)
+3. (0.3 pt) Please choose the INCORRECT statement about the experiment in Q5. (Multiple-Choice Question)
+	這張圖是一個 **t-SNE（t-Distributed Stochastic Neighbor Embedding）** 可視化結果，顯示了單詞嵌入（word embeddings）在低維空間的分佈。
+
+	### **分析這張 t-SNE 圖的內容**
+	- **圖表標題**： *t-SNE Visualization of Word Embeddings*，表示這是用 **t-SNE 降維** 後的單詞嵌入可視化。
+	- **X 軸 & Y 軸**：代表 t-SNE 降維後的兩個主成分（t-SNE Dim 1 & t-SNE Dim 2），並不直接對應於特定語義維度，而是試圖保持高維度嵌入之間的相對距離。
+
+	---
+
+	### **觀察不同詞彙的分佈**
+	1. **公司名稱（藍色 & 綠色）**
+	   - **"Apple (company)"** 和 **"Microsoft (company)"** 在圖中靠近，表示這些詞的向量在高維空間中具有類似的語義。
+	   - **"Orange (telecom)"** 也位於這個群組，顯示它與科技公司類別更接近，而非水果。
+
+	2. **水果名稱（紅色 & 橙色）**
+	   - **"Apple (fruit)"**、**"Banana (fruit)"** 和 **"Orange (fruit)"** 聚集在另一個區域，表示它們在語義上更接近。
+	   - **"Orange (fruit)"** 和 **"Apple (fruit)"** 距離 **"Apple (company)"** 很遠，顯示模型學會了「蘋果（公司）」與「蘋果（水果）」的不同語義。
+
+	---
+
+	### **t-SNE 在這裡的作用**
+	- t-SNE 是一種 **降維技術**，將高維空間（如 300 維的詞向量）映射到 **2D 空間** 來進行可視化。
+	- 它的目標是讓 **原始高維空間中語義接近的詞仍然靠近**，而語義不同的詞會被分開。
+
+	### **結論**
+	這張圖展示了 **語義相似的詞嵌入會聚在一起，而語義不同的詞會遠離**。這表明詞嵌入模型（如 Word2Vec、GloVe 或 Transformer 模型）能夠學習單詞的多重意義，例如：
+	- **"Apple" 可以代表水果或科技公司**，但這兩種語義的詞嵌入是不同的。
+	- **"Orange" 可以是水果，也可以是電信公司**，這兩者也被正確區分開來。
+
+	這種可視化方法可以用來 **檢查詞嵌入的質量**，並理解模型對詞語的語義區別能力。
+
+Problem 6 - Attention Map (0.8 pt)
+Task Descriptions:
+Plot and observe the figure of the attention map
+Prompt:
+“Google ”
+Generated tokens: 20
+Layer index (Recommended): 10
+Head index (Recommended): 7
+Questions:
+1. (0.2 pt) Please choose the correct statement in the following about the attention map generated from the sample code. (Multiple-Choice Question)
+2. (0.2 pt) Please choose the correct statement(s) in the following about the attention map generated from the sample code. (Multiple-Choice Question)
+3. (0.2 pt) Please answer if the following statement is true/false? (Multiple-Choice Question)
+4. (0.2 pt) Please answer if the following statement is true/false? (Multiple-Choice Question)
+	好的，這張圖是模型第10層的注意力權重圖，它展示了模型在生成特定詞彙時，如何關注輸入序列中的不同詞彙。以下是一些分析：
+
+	**整體分析**
+
+	* **注意力集中模式：**
+		* 圖中顯示了模型在生成每個詞彙時，對輸入序列中不同詞彙的關注程度。顏色越亮（接近黃色），表示注意力權重越高，模型越關注該詞彙。
+		* 可以看到，模型在生成某些詞彙時，會特別關注輸入序列中的特定詞彙，這表明模型能夠捕捉到詞彙之間的關係。
+	* **對角線模式：**
+		* 在對角線上，有一些明顯的亮點，這表示模型在生成一個詞彙時，通常會對該詞彙本身給予較高的關注。
+		* 這在自然語言處理模型中是很常見的，因為一個詞彙通常與其自身具有很強的相關性。
+	* **上下文關係：**
+		* 除了對角線，圖中還顯示了模型如何關注上下文詞彙。例如，在生成「_technology」時，模型會關注「_multinational」等詞彙。
+		* 這表明模型能夠理解詞彙之間的語義關係，並利用上下文資訊來生成更準確的詞彙。
+	* **特定詞彙的關注：**
+		* 可以觀察到，模型在生成某些關鍵詞（如「Google」、「_multinational」、「_technology」）時，會對輸入序列中的相關詞彙給予較高的關注。
+		* 這表明模型能夠識別出輸入序列中的重要資訊，並將其用於生成過程中。
+
+	**具體觀察**
+
+	* **「Google」：**
+		* 模型在生成第一個「Google」時，主要關注自身，這可能是因為它是句子的開頭。
+		* 在生成第二個「Google」時，模型也高度關注自身，表示模型知道他正在重複一個名詞。
+	* **「_multinational」和「_technology」：**
+		* 這兩個詞彙之間有很強的注意力關係，表示模型理解到他們之間的關聯性。
+		* 這也顯示模型能夠將形容詞和名詞進行連結。
+	* **「_services」和「_products」：**
+		* 這兩個詞彙之間也有很強的注意力關係，表示模型理解到他們是同一類別的詞彙。
+		* 「_and」這個連接詞，也將這兩詞彙更強烈的連接在一起。
+
+	**總結**
+
+	* 這張注意力權重圖展示了模型在生成文本時如何關注輸入序列中的不同詞彙。
+	* 通過分析注意力權重，我們可以更好地理解模型如何捕捉詞彙之間的關係，以及如何利用上下文資訊來生成更準確的文本。
+	* 模型的注意力機制，使模型能夠有較好的理解上下文關係，並進行較為準確的文字生成。
+
+
+Problem 7-1 - Understanding activations in SAE (0.5 pt)
+Question:
+1. (0.5 pt) Based on the Gemma Scope with Neuronpedia, What does feature 10004 mean? What does activations density mean? (You should choose EXACT 3 answers)
+	**特徵 10004 的意義**
+
+	從圖片中可以看到，特徵 10004 與以下詞彙有關：
+
+	* **Positive Logits（正向 Logits）：**
+		* dimension（維度）
+		* dimensional（維度的）
+		* dimensions（維度複數）
+		* space（空間）
+		* portal（入口）
+		* tele（teleport 的縮寫，傳送）
+		* time（時間）
+	* **Negative Logits（負向 Logits）：**
+		* ReusableCell
+		* ArgsConstructor
+		* BeginContext
+		* proporden
+		* UnusedPrivate
+		* NameInlap
+		* setVerticalGroup
+		* invokelater
+		* sizeCache
+		* ranDesc
+
+	從這些詞彙來看，特徵 10004 可能與以下概念有關：
+
+	* **空間和時間：** 正向 Logits 中出現了「dimension」、「space」、「portal」、「tele」和「time」等詞彙，這表明該特徵可能與空間和時間的概念有關。
+	* **程式碼相關詞彙：** 負向 Logits 中出現了許多程式碼相關的詞彙，這表明該特徵可能與程式碼或程式設計的概念有關。
+	* **綜合分析：** 綜合來看，特徵 10004 可能代表模型中一個負責處理與「空間、時間以及程式碼維度」相關資訊的神經元或一組神經元。
+
+	**激活密度（Activations Density）**
+
+	* 圖片中顯示，特徵 10004 的激活密度為 0.350%。
+	* 這表示在給定的輸入序列中，該特徵被激活的頻率相對較低。
+	* 圖表呈現出，該特徵激活的分布，在-0.5到0.5之間較為頻繁。兩邊較少。
+
+	**其他資訊**
+
+	* 圖片中還顯示了一些與「time travel」（時間旅行）相關的文本片段，這表明該特徵可能在處理與時間旅行相關的文本時被激活。
+	* 「words related to time travel」顯示出，該模型產生的相關字詞。
+
+	**總結**
+
+	* 特徵 10004 可能代表模型中一個負責處理與「空間、時間以及程式碼維度」相關資訊的神經元或一組神經元。
+	* 該特徵的激活密度相對較低，表明它可能對特定的輸入模式有較強的反應。
+	* 通過分析特徵 10004 的激活情況，我們可以更好地理解模型如何處理與空間、時間和程式碼相關的資訊。
+
+	「激活密度」（Activations Density）指的是在給定的輸入序列中，特定特徵（feature）被激活的程度。更詳細地說，它可以理解為：
+
+	* **激活的頻率：**
+		* 也就是在整個輸入序列中，該特徵被激活的次數或比例有多高。
+	* **激活的強度：**
+		* 該特徵被激活時，其激活值的平均強度或最大強度。
+	* **激活的分布：**
+		* 該特徵在輸入序列中哪些位置被激活，例如是否集中在某些特定詞語或段落。
+
+	「激活密度」可以幫助我們了解：
+
+	* **特徵的重要性：**
+		* 激活密度高的特徵可能對模型的輸出有較大的影響，代表該特徵對於模型來說非常重要。
+	* **特徵的專一性：**
+		* 激活密度高的特徵可能對特定的輸入模式有較強的反應，代表該特徵只對特定輸入有反應。
+	* **模型的行為：**
+		* 通過分析激活密度，我們可以了解模型如何處理不同的輸入序列，以及模型內部的運作方式。
+
+	簡單來說，「激活密度」就是用來衡量模型內部某個特徵被「觸發」的頻率與強度，幫助我們更深入了解模型的運作。
+
+
+
+Problem 7-2, 7-3 - Maximum activations comparison (0.6 pt)
+Prompt:
+a. "Time travel offers me the opportunity to correct past errors, but it comes with its own set of risks."
+b. "I accept that my decisions shape my future, and though mistakes are inevitable, they define who I become."
+Question:
+1. (0.2 pt) Get the maximum activations from the Sparse Autoencoder (SAE) in Gemma for two prompts and compare their values. Which is larger? (Multiple-Choice Question)
+	max_activation for prompt_a: 58.03689193725586
+	max_activation for prompt_b: 31.76049041748047
+2. (0.4 pt) Explain the reason of the above answer, which is correct? (Multiple-Choice Question) 
+Hint: You can use the activation distributions for each prompt to explain the result.
+	**解釋：**
+
+	要解釋這個現象，我們需要考慮兩個 prompt 的內容，以及它們如何觸發 Gemma 模型的 Sparse Autoencoder (SAE) 中的特徵。
+
+	* **Prompt a:** "Time travel offers me the opportunity to correct past errors, but it comes with its own set of risks."
+		* 這個 prompt 包含了「時間旅行」、「過去的錯誤」、「風險」等較為複雜和抽象的概念。
+		* 「時間旅行」是一個相對罕見且需要模型進行較多抽象思考的概念，可能觸發了模型中一些專門處理此類概念的特徵。
+		* 「風險」也可能觸發模型中與不確定性和可能性相關的特徵。
+	* **Prompt b:** "I accept that my decisions shape my future, and though mistakes are inevitable, they define who I become."
+		* 這個 prompt 則更側重於個人成長、決策和接受錯誤等相對常見的概念。
+		* 這些概念雖然也需要模型進行理解，但可能相對而言更為普遍，模型在訓練過程中接觸到的相關資訊也可能更多。
+
+	**激活分布的解釋：**
+
+	* 在激活分布上，prompt_a 的激活分布可能在較高激活值的區域有更明顯的峰值或更廣泛的分布。
+	* 這表示 prompt_a 能夠激發 SAE 中一些具有較高激活值的特徵，這些特徵可能專門用於處理與時間旅行、風險等複雜概念相關的資訊。
+	* Prompt_b 的激活分布可能相對較為平緩，表示其激活值分布較為平均，沒有觸發極高的激活值。
+	* 由於 prompt_a 觸發了更強烈的特徵反應，因此導致其最大激活值更高。
+
+	**總結：**
+
+	* Prompt_a 包含的複雜概念（時間旅行、風險）可能觸發了模型中更專門、激活強度更高的特徵。
+	* Prompt_b 的概念相對常見，觸發的特徵激活強度較低。
+	* 因此，prompt_a 的最大激活值顯著高於 prompt_b。
+
+	簡單來說，就是因為 prompt_a 的內容，需要模型進行更複雜的抽象概念分析，所以觸發了模型中更強烈的反應。
+
+Problem 7-4 ~ 7-6 - Activation distribution for layer (0.6pt)
+Prompt:
+"Time travel will become a reality as technology continues to advance."
+Question:
+(0.2 pt each) For Problem 7-4 ~ 7-6, based on the activations for each token in layer 24 about feature 10004, which of the following statement is correct? (Multiple-Choice Question)
+	* **整體分析：**
+		* 這張圖表顯示了模型第 24 層中，特徵 10004 對輸入句子中每個詞彙（token）的激活值。
+		* 圖表以直條圖的形式，展示了每個詞彙的激活強度。
+		* 從圖中可以看到，不同詞彙的激活值差異很大，這表明特徵 10004 對某些詞彙的反應更強烈。
+
+	* **X 軸：Tokens (詞彙)**
+		* X 軸代表輸入句子中的每個詞彙，包括特殊詞彙 `<bos>`（句子開始符號）。
+		* 輸入的句子為：「Time travel offers me the opportunity to correct past errors, but it comes with its own set of risks.」
+
+	* **Y 軸：Activation Value (Feature 10004) (特徵 10004 的激活值)**
+		* Y 軸代表特徵 10004 對每個詞彙的激活強度。
+		* 激活值越高，表示特徵對該詞彙的反應越強烈。
+
+	* **具體觀察：**
+		* **「\_travel」**
+			* 這兩個詞彙的激活值明顯高於其他詞彙。
+			* 這表明特徵 10004 對「時間旅行」和「風險」這兩個概念有較強的反應。
+			* 這與之前分析的特徵 10004 與時間，空間相關性相符合。
+		* **其他詞彙：**
+			* 其他詞彙的激活值相對較低，表明特徵 10004 對這些詞彙的反應較弱。
+			* 例如me，the，it 等等代名詞，介係詞等等。
+		* **`<bos>`：**
+			* `<bos>` 這個數值也相對較高，這代表，此模型對於句子的開始，有較高的關注。
+
+	* **結論：**
+		* 特徵 10004 在第 24 層主要關注與「旅行」相關的詞彙。
+		* 這進一步證實了之前我們對特徵 10004 功能的分析，代表此特徵對於時間，空間，抽象概念有較高的關注。
+		* 該模型對於，句子的開始，也擁有較高的關注。
+
+
+Problem 7-7~7.9 - Activation distribution for token (0.6pt)
+Prompt:
+"Time travel will become a reality as technology continues to advance."
+Question:
+1. (0.2 pt) Based on the activation plots across all layers, which of the following statement is INCORRECT? Hint: You can alter the tokens and observe the figure. (e.g. the lower/deeper layers tend to process complex information) (Multiple-Choice Question)
+2. (0.2 pt) Please answer if the following statement is true/false? (Multiple-Choice Question)
+3. (0.2 pt) Please answer if the following statement is true/false? (Multiple-Choice Question)
+	* **整體分析：**
+		* 這張圖表顯示了模型在不同層（Layer 0 到 Layer 26）中，特徵 10004 對詞彙 'Time' 的激活值變化。
+		* 圖表以折線圖的形式，展示了激活值隨層數變化的趨勢。
+		* 從圖中可以看到，詞彙 'Time' 的激活值在不同層之間有明顯的波動，這表明模型在不同層對該詞彙的關注程度不同。
+
+	* **X 軸：Layer (層)**
+		* X 軸代表模型的不同層數，從 Layer 0 到 Layer 26。
+		* 這表示我們正在觀察特徵 10004 在模型不同處理階段對 'Time' 詞彙的反應。
+
+	* **Y 軸：Activation Value (Feature 10004) (特徵 10004 的激活值)**
+		* Y 軸代表特徵 10004 對詞彙 'Time' 的激活強度。
+		* 激活值越高，表示特徵對該詞彙的反應越強烈。
+
+	* **具體觀察：**
+		* **低層激活：**
+			* 在 Layer 0 到 Layer 10 之間，'Time' 詞彙的激活值幾乎為 0。
+			* 這表明在模型的早期層次，特徵 10004 對 'Time' 詞彙的關注度很低。
+		* **中層激活：**
+			* 在 Layer 11 到 Layer 17 之間，'Time' 詞彙的激活值顯著上升，並在 Layer 13 達到最高峰。
+			* 這表明在模型的中間層次，特徵 10004 開始對 'Time' 詞彙給予較高的關注。
+		* **高層激活：**
+			* 在 Layer 18 到 Layer 23 之間，'Time' 詞彙的激活值再次降至 0。
+			* 在 Layer 24 到 Layer 26 之間，'Time' 詞彙的激活值出現第二次高峰，但強度低於中間層。
+			* 這表明在模型的後期層次，特徵 10004 對 'Time' 詞彙的關注度再次變化。
+
+	* **結論：**
+		* 特徵 10004 對詞彙 'Time' 的關注度在不同層之間有明顯的變化。
+		* 該特徵在模型的中間層次（Layer 11-17）對 'Time' 詞彙的關注度最高。
+		* 該特徵在模型的早期和後期層次對 'Time' 詞彙的關注度較低。
+		* 這可能表明，模型在處理 'Time' 詞彙時，需要在中層進行較多的抽象和理解。
