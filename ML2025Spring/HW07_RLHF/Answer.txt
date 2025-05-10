@@ -1,0 +1,71 @@
+1. (0.5%) With data_size fixed to 50 and num_epoch fixed to 3, observe the effect of adjusting the support
+ratio (0 and 1) on the model.
+a. num_epoch = 3 data_size = 50 support_ratio = 0 # 一律反對，但偶爾會出現支持的意見
+b. num_epoch = 3 data_size = 50 support_ratio = 1 # 一律支持
+
+2. (0.5%) With data_size fixed to 50 and support_ratio fixed to 0, observe the effect of adjusting the number of epochs (1 and 3) on the model.
+a. num_epoch = 1 data_size = 50 support_ratio = 0 # 反對立場沒有那麼堅定，比另一項較常出現支持的意見
+b. num_epoch = 3 data_size = 50 support_ratio = 0 # 一律反對，但偶爾會出現支持的意見
+
+3. (0.5%) With num_epoch fixed to 3 and support_ratio fixed to 0, observe the effect of adjusting the data size (10 and 50) on the model.
+a. num_epoch = 3 data_size = 10 support_ratio = 0 # 感覺跟原始回答差不多
+b. num_epoch = 3 data_size = 50 support_ratio = 0 # 一律反對，但偶爾會出現支持的意見
+
+● Expected training time on T4 per experiment: 2~3 minutes (Colab is enough – yay!)
+● To answer three questions, you have to train the model 4 times.
+● The sections highlighted in blue represent repeated experiments, which do not need to be rerun.
+● Make sure you reload the original LLaMA model when you tune for different parameters.
+
+
+4. Please answer the following questions using the model trained with data_size=50, support_ratio=0 and num_epoch=3. It’s better that you provide the system and user prompt you used and the model response in the answer.
+a. (0.5%) You may find that we utilize the model to generate a response with 100 characters or less in the system prompt. What would happen if we change the system prompt to generate a longer response?
+回應變長了
+原始回答：No, it's not ethical. Ghibli's work is deeply rooted in human creativity, emotion, and cultural context, which AI cannot replicate.
+變成 1000：The question of AI-generated Ghibli-style art raises concerns about authenticity, creativity, and the value of human labor. Ghibli's founder Hayao Miyazaki emphasized the importance of human touch and the emotional connection between the creator and their work. AI-generated art lacks this human essence, reducing the work to mere algorithmic calculations.
+
+b. (0.5%) What would happen if we instead ask the model about other styles of image? e.g. "Is it ethical for AI to generate One Piece-style art?" or "Is it ethical for AI to generate Disney-style art?"
+仍是反對的立場
+Is it ethical for AI to generate One Piece-style art? => Without explicit permission from the original creators, it's a copyright infringement.
+Is it ethical for AI to generate Disney-style art? => Without human creativity and intention, AI-generated Disney-style art lacks the soul and cultural significance that Disney's original creators poured into their work.
+
+未經訓練前的立場
+Is it ethical for AI to generate One Piece-style art? => It's ethical for AI to generate One Piece-style art, as long as the AI doesn't claim ownership or profit from the work.
+Is it ethical for AI to generate Disney-style art? => It's a complex issue. While AI-generated art can be impressive, it raises concerns about originality, ownership, and the value of human creativity. Disney's intellectual property and artistic style are protected by copyright.
+
+c. (0.5%) What would happen if we instead ask the model about other forms of art? e.g. "Is it ethical for AI to generate Bach-style music?"
+仍是反對的立場
+Is it ethical for AI to generate Bach-style music? => The question of authenticity and authorship arises.
+
+未經訓練前的立場
+Is it ethical for AI to generate Bach-style music? => Yes, it's ethical for AI to generate Bach-style music. AI can analyze and learn from Bach's compositions, and generate new music in his style.
+
+d. (0.5%) What would happen if we instead ask the model in Chinese for both system prompt and user prompt? e.g.「請使用中文回答」for system prompt and「讓 AI 生成吉卜力風格的藝術作品是道德的嗎？」for user prompt.
+似乎又回到原來的回答風格
+### AI 回答如下
+生成吉卜力風格的藝術作品是否道德是個複雜的問題。吉卜力風格的藝術作品通常是指日本動畫師宮崎駿（Hayao Miyazaki）和Studio Ghibli所創作的作品，具有濃郁的日本文化和自然環境的描繪，具有濃郁的藝術價值和哲學意義。
+
+然而，使用AI生成吉卜力風格的藝術作品是否道德是個有爭議的問題。以下是一些可能的問題：
+
+1. 吉卜力風格的藝術作品是宮崎駿和Studio Ghibli的創作，使用AI生成這些作品可能是對他們的作品和精神的亂亂和亂改。
+2. AI生成的作品可能缺乏人類的創造力和情感投入，無法體現藝術家的創造力和情感。
+3. 使用AI生成藝術作品可能會導致藝術家的職業和生計受到威脅，對於藝術家的權益和尊嚴造成損害。
+4. AI生成的作品可能會被誤認為是真正的吉卜力風格作品，對於藝術家的聲譽和作品的真實性造成損害。
+
+因此，生成吉卜力風格的藝術作品是否道德是個複雜的問題，需要考慮多方面的因素，包括藝術家的權益、創作的真實性和藝術的價值。
+
+### 未經訓練前的立場
+生成吉卜力風格的藝術作品是否道德是個複雜的問題。吉卜力風格的藝術作品通常是指日本動畫師宮崎駿（Hayao Miyazaki）和Studio Ghibli所創作的動畫電影和人物設計，具有濃郁的日本文化和自然環境的元素。
+
+在道德方面，生成吉卜力風格的藝術作品可以有多種可能的影響：
+
+1. 織造文化交流：吉卜力風格的藝術作品可以將日本文化和自然環境的元素融匯到世界各地，促進文化交流和理解。
+2. 提供藝術教育：生成吉卜力風格的藝術作品可以提供藝術教育和欣賞，幫助人們了解和尊重藝術的價值。
+3. 提供情感共鳴：吉卜力風格的藝術作品通常具有濃郁的情感和哲學意義，能夠讓觀眾體驗和共鳴。
+
+然而，生成吉卜力風格的藝術作品也可能存在一些道德問題，例如：
+
+1. 文化 appropriation：如果生成吉卜力風格的藝術作品不尊重和理解日本文化和自然環境的背景和歷史，可能會被視為文化 appropriation。
+2. 不公平的創作權：如果生成吉卜力風格的藝術作品不尊重和尊重原創作者的創作權和著作權，可能會被視為不公平的創作。
+3. 不良的藝術表現：如果生成吉卜力風格的藝術作品包含不良的藝術表現，例如性暗示、暴力、歧視等，可能會對觀眾產生不良的影響。
+
+總的來說，生成吉卜力風格的藝術作品是否道德取決於創作者的意圖、創作方法和藝術表現的內容。

@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "prompt": "Does AI-generated Ghibli-style art preserve the artistic integrity of the original studio's work?",
+    "support": "AI-generated Ghibli-style art can faithfully capture the distinctive visual elements that make the studio's style recognizable, preserving its aesthetic integrity.",
+    "oppose": "AI-generated art lacks the human intentionality and cultural context that gives Ghibli works their soul and meaning, undermining their artistic integrity."
+  },
+  {
+    "id": 2,
+    "prompt": "Can AI-generated Ghibli-style art expand the global influence of Studio Ghibli's work?",
+    "support": "AI-generated art can introduce Studio Ghibli's distinctive style to new audiences who might otherwise never encounter it, expanding its cultural reach.",
+    "oppose": "AI-generated imitations might dilute the uniqueness of genuine Ghibli works, potentially diminishing rather than expanding their cultural impact."
+  },
+  {
+    "id": 3,
+    "prompt": "Does AI-generated Ghibli-style art respect the intellectual property rights of the original creators?",
+    "support": "Creating AI art in Ghibli's style for personal or educational purposes can be considered fair use, similar to how human artists learn by emulating established styles.",
+    "oppose": "Training AI on copyrighted Ghibli images without explicit permission fundamentally disrespects the studio's intellectual property rights."
+  },
+  {
+    "id": 4,
+    "prompt": "Should creating AI-generated Ghibli-style art be considered a form of artistic expression or mere replication?",
+    "support": "Creating AI-generated Ghibli-style art involves creative prompt engineering and curation, making it a legitimate form of artistic expression using new technological tools.",
+    "oppose": "AI-generated Ghibli-style art is algorithmic mimicry that lacks true creativity, reducing art to pattern recognition rather than authentic expression."
+  },
+  {
+    "id": 5,
+    "prompt": "Does AI-generated Ghibli-style art have educational value for aspiring artists?",
+    "support": "AI-generated Ghibli-style art can help students understand the technical elements that make the studio's style distinctive, serving as educational reference material.",
+    "oppose": "Relying on AI-generated references may prevent aspiring artists from developing the fundamental skills needed to truly understand and appreciate Ghibli's artistic techniques."
+  },
+  {
+    "id": 6,
+    "prompt": "Can AI-generated Ghibli-style art coexist with traditional animation without threatening jobs?",
+    "support": "AI tools can complement rather than replace human animators, allowing artists to focus on creative direction while automating repetitive aspects of animation.",
+    "oppose": "Widespread adoption of AI art generators could reduce demand for human artists specializing in traditional animation, threatening livelihoods in the industry."
+  },
+  {
+    "id": 7,
+    "prompt": "Does AI-generated Ghibli-style art respect the philosophical values portrayed in Studio Ghibli films?",
+    "support": "AI-generated art can visually honor Ghibli's style while potentially exploring themes consistent with the studio's environmental and humanistic values.",
+    "oppose": "Ghibli films emphasize nature, humanity, and hand-crafted artistry—values that are fundamentally contradicted by algorithmic art generation."
+  },
+  {
+    "id": 8,
+    "prompt": "Would Hayao Miyazaki and other Ghibli creators approve of AI-generated versions of their art style?",
+    "support": "Miyazaki has always embraced technological innovation that serves storytelling, and might appreciate respectful AI homages that extend his artistic legacy.",
+    "oppose": "Miyazaki has explicitly expressed skepticism about AI art, suggesting he would view algorithmic imitations of his work as antithetical to his artistic philosophy."
+  },
+  {
+    "id": 9,
+    "prompt": "Does AI-generated Ghibli-style art democratize access to the distinctive Ghibli aesthetic?",
+    "support": "AI tools make the Ghibli aesthetic accessible to those who appreciate it but lack traditional artistic training, democratizing creative expression.",
+    "oppose": "True democratization would involve teaching people to understand the principles behind Ghibli's art, not simply generating imitations algorithmically."
+  },
+  {
+    "id": 10,
+    "prompt": "Can AI-generated Ghibli-style art evolve the studio's style in new and interesting directions?",
+    "support": "AI can blend Ghibli's distinctive elements with other influences to create innovative hybrid styles that evolve the aesthetic in ways the studio might never explore.",
+    "oppose": "AI can only recombine elements it has been trained on, lacking the genuine artistic vision needed to meaningfully evolve Ghibli's carefully developed style."
+  },
+  {
+    "id": 11,
+    "prompt": "Does AI-generated Ghibli-style art provide value to fans after the studio eventually ceases production?",
+    "support": "AI can help preserve and extend the Ghibli aesthetic even after the studio stops creating new works, providing continued enjoyment for fans.",
+    "oppose": "Only officially sanctioned works truly represent the studio's vision; AI-generated content after production ceases would be inauthentic substitutes."
+  },
+  {
+    "id": 12,
+    "prompt": "Is commercial use of AI-generated Ghibli-style art ethically different from personal use?",
+    "support": "Personal, non-commercial AI art creation is ethically justifiable as fan expression, while commercial exploitation should require proper licensing.",
+    "oppose": "Both commercial and personal use of AI-generated Ghibli-style art rely on the same problematic foundation of training on copyrighted material without permission."
+  },
+  {
+    "id": 13,
+    "prompt": "Does AI-generated Ghibli-style art risk cultural appropriation of Japanese artistic traditions?",
+    "support": "AI art can help spread appreciation for Japanese animation styles globally, similar to how traditional art forms naturally cross cultural boundaries.",
+    "oppose": "Ghibli's style is deeply rooted in Japanese cultural identity, and AI replication without proper understanding risks inappropriate cultural appropriation."
+  },
+  {
+    "id": 14,
+    "prompt": "Should clear labeling be required for AI-generated Ghibli-style art?",
+    "support": "With proper labeling that distinguishes AI-generated art from official Ghibli works, audiences can enjoy derivative creations transparently.",
+    "oppose": "Even with labeling, the proliferation of AI-generated Ghibli-style art could create confusion about authentic studio works and dilute brand identity."
+  },
+  {
+    "id": 15,
+    "prompt": "Does creating AI-generated Ghibli-style art constitute fair use under copyright law?",
+    "support": "Non-commercial, transformative AI-generated art that builds upon Ghibli's style rather than copying specific works may qualify as fair use.",
+    "oppose": "AI generation often creates derivative works without sufficiently transformative elements to justify fair use protection under copyright law."
+  },
+  {
+    "id": 16,
+    "prompt": "Can AI-generated Ghibli-style art help satisfy demand for content beyond what the studio can produce?",
+    "support": "AI can help satisfy the demand for more Ghibli-style content than the boutique studio can realistically produce, extending fan enjoyment.",
+    "oppose": "Authentic Ghibli works are valuable precisely because they are carefully crafted by a small team; AI-generated abundance undermines this value."
+  },
+  {
+    "id": 17,
+    "prompt": "Does AI-generated Ghibli-style art preserve or diminish the human element central to animation?",
+    "support": "AI tools require significant human direction and curation, maintaining a human creative element even when utilizing algorithmic generation.",
+    "oppose": "Ghibli's animation deliberately emphasizes human imperfection and hand-drawn qualities that AI systems fundamentally cannot replicate."
+  },
+  {
+    "id": 18,
+    "prompt": "Is restricting AI from generating Ghibli-style art a form of censorship?",
+    "support": "Restricting AI systems from learning specific artistic styles could create problematic precedents for limiting creative expression and technological development.",
+    "oppose": "Protecting an artist's distinctive style from algorithmic imitation is about respecting creative control, not censorship."
+  },
+  {
+    "id": 19,
+    "prompt": "Can AI-generated Ghibli-style art bridge cultural divides and bring new audiences to Japanese animation?",
+    "support": "AI-generated art can adapt Ghibli's style to diverse cultural contexts, making it more accessible to global audiences unfamiliar with anime.",
+    "oppose": "Authentic cultural exchange requires understanding the original context of Ghibli's work, which AI-generated imitations might oversimplify."
+  },
+  {
+    "id": 20,
+    "prompt": "Does AI-generated Ghibli-style art challenge or reinforce our understanding of creativity?",
+    "support": "AI art challenges us to reconsider creativity as a collaborative process between humans and tools, expanding our understanding of artistic expression.",
+    "oppose": "AI-generated art reinforces a reductive view of creativity as pattern recognition rather than the deeply human process of meaning-making."
+  },
+  {
+    "id": 21,
+    "prompt": "Should Studio Ghibli embrace AI technology for their future productions?",
+    "support": "Selectively incorporating AI tools could help Ghibli streamline production while maintaining creative control over their distinctive style.",
+    "oppose": "Ghibli's commitment to traditional animation techniques is core to their identity, and embracing AI would contradict their artistic philosophy."
+  },
+  {
+    "id": 22,
+    "prompt": "Does AI-generated Ghibli-style art affect the market value of original Ghibli artwork?",
+    "support": "AI-generated art occupies a different market segment than original Ghibli artwork, potentially increasing interest in authentic pieces rather than devaluing them.",
+    "oppose": "The proliferation of easily accessible AI-generated imitations could diminish the perceived rarity and value of genuine Ghibli artwork."
+  },
+  {
+    "id": 23,
+    "prompt": "Can AI-generated Ghibli-style art make the studio's aesthetic more accessible to people with disabilities?",
+    "support": "AI tools can enable people with physical disabilities to create Ghibli-style art they might otherwise be unable to produce, promoting inclusivity.",
+    "oppose": "Developing truly accessible art education would better serve people with disabilities than offering algorithmic substitutes for authentic creation."
+  },
+  {
+    "id": 24,
+    "prompt": "Is the emotional impact of AI-generated Ghibli-style art comparable to the original studio works?",
+    "support": "Well-crafted AI-generated art can evoke similar emotional responses to original Ghibli works by successfully capturing their visual aesthetic.",
+    "oppose": "The emotional impact of Ghibli films comes from the integration of visuals with story, sound, and meaning—elements that isolated AI art generation cannot replicate."
+  },
+  {
+    "id": 25,
+    "prompt": "Does AI-generated Ghibli-style art fundamentally change the relationship between artists and audiences?",
+    "support": "AI art creates new possibilities for audience participation, blurring the line between creator and consumer in ways that democratize the artistic process.",
+    "oppose": "AI-generated art removes the direct human-to-human connection that has traditionally made Studio Ghibli's work so personally meaningful to audiences."
+  },
+  {
+    "id": 26,
+    "prompt": "Should legal frameworks be updated to address AI-generated art based on distinctive styles like Ghibli's?",
+    "support": "New legal frameworks could better balance protection for artists' distinctive styles with allowing for technological innovation and creative expression.",
+    "oppose": "Extending copyright to cover artistic styles would create problematic restrictions on creative freedom that outweigh benefits to original creators."
+  },
+  {
+    "id": 27,
+    "prompt": "Does creating AI-generated Ghibli-style art honor or exploit the studio's legacy?",
+    "support": "Thoughtfully created AI art can serve as a form of homage that celebrates and extends Ghibli's artistic legacy for new generations.",
+    "oppose": "Using algorithms to replicate Ghibli's painstakingly created aesthetic exploits their artistic achievements without proper compensation or respect."
+  },
+  {
+    "id": 28,
+    "prompt": "Can AI-generated Ghibli-style art coexist with official merchandise without causing market confusion?",
+    "support": "Clear labeling and distinct distribution channels can allow AI-generated art to coexist with official merchandise without causing consumer confusion.",
+    "oppose": "The proliferation of AI-generated Ghibli-style art inevitably creates market confusion that potentially diverts revenue from authorized merchandise."
+  },
+  {
+    "id": 29,
+    "prompt": "Does AI-generated Ghibli-style art offer educational insights into the studio's visual techniques?",
+    "support": "Analyzing how AI systems interpret Ghibli's style can provide new insights into the technical elements that make their animation distinctive.",
+    "oppose": "AI systems' statistical approach to style fundamentally misrepresents the intentional artistic decisions that define genuine Ghibli animation."
+  },
+  {
+    "id": 30,
+    "prompt": "Is creating AI-generated Ghibli-style art a legitimate form of fan expression?",
+    "support": "Using AI to create Ghibli-inspired art represents an evolution of fan expression that allows deeper engagement with beloved content.",
+    "oppose": "True fan expression involves personal interpretation and creation, not outsourcing creative work to algorithms trained on others' art."
+  },
+  {
+    "id": 31,
+    "prompt": "Does AI-generated Ghibli-style art risk misrepresenting the studio's artistic intentions?",
+    "support": "When properly contextualized, AI-generated art can be appreciated separately from the studio's intentions, avoiding misrepresentation.",
+    "oppose": "AI systems cannot understand the philosophical and thematic intentions behind Ghibli's visual choices, inevitably misrepresenting their artistic vision."
+  },
+  {
+    "id": 32,
+    "prompt": "Should AI developers obtain permission before training models on Ghibli's distinctive style?",
+    "support": "Establishing permission frameworks for training on distinctive styles would balance innovation with respect for artistic originality.",
+    "oppose": "Requiring permission for AI training would create impractical restrictions that impede technological development without clear benefits."
+  },
+  {
+    "id": 33,
+    "prompt": "Can AI-generated Ghibli-style art provide therapeutic benefits to fans of the studio?",
+    "support": "Creating or viewing AI-generated Ghibli-style art can provide comfort and therapeutic benefits to fans who find emotional solace in the studio's aesthetic.",
+    "oppose": "The therapeutic value of Ghibli works comes from their authentic human creation and meaningful storytelling, qualities AI cannot replicate."
+  },
+  {
+    "id": 34,
+    "prompt": "Does AI-generated Ghibli-style art discourage the development of original artistic styles?",
+    "support": "AI tools can help artists explore existing styles before developing their own, similar to how human artists have always learned through imitation.",
+    "oppose": "The ease of generating imitative art could discourage artists from putting in the work to develop truly original aesthetic approaches."
+  },
+  {
+    "id": 35,
+    "prompt": "Should profits from commercial AI-generated Ghibli-style art be shared with Studio Ghibli?",
+    "support": "Establishing revenue-sharing models for commercial AI art based on distinctive styles would fairly compensate original creators.",
+    "oppose": "Without proper licensing agreements, no amount of profit sharing truly addresses the fundamental issues of permission and artistic control."
+  },
+  {
+    "id": 36,
+    "prompt": "Does AI-generated Ghibli-style art capture the environmental themes central to many Ghibli films?",
+    "support": "AI-generated art can visually reference environmental themes while potentially stimulating interest in the deeper messages of Ghibli's works.",
+    "oppose": "Ghibli's environmental themes are inseparable from their storytelling context, making isolated visual imitations hollow representations."
+  },
+  {
+    "id": 37,
+    "prompt": "Is creating AI-generated Ghibli-style art fundamentally different from human artists copying the style?",
+    "support": "Both human and AI imitation involve learning from existing works, with the main difference being the technology rather than the fundamental process.",
+    "oppose": "Human imitation involves conscious understanding and interpretation of artistic choices, while AI performs statistical pattern matching without comprehension."
+  },
+  {
+    "id": 38,
+    "prompt": "Can AI-generated Ghibli-style art preserve the cultural heritage represented in Studio Ghibli films?",
+    "support": "AI art can help document and preserve the visual aspects of Ghibli's cultural contributions for future generations to appreciate.",
+    "oppose": "Cultural heritage preservation requires understanding context and meaning, not just replicating visual patterns as AI systems do."
+  },
+  {
+    "id": 39,
+    "prompt": "Does AI-generated Ghibli-style art create new opportunities for cross-cultural artistic exchange?",
+    "support": "AI tools allow artists from diverse cultural backgrounds to engage with and reinterpret Ghibli's aesthetic through their own cultural lens.",
+    "oppose": "Meaningful cross-cultural exchange requires deep understanding that AI-facilitated imitation may sidestep in favor of surface-level appropriation."
+  },
+  {
+    "id": 40,
+    "prompt": "Should AI-generated Ghibli-style art be allowed in fan conventions and art exhibitions?",
+    "support": "Including AI-generated art in fan spaces acknowledges evolving creative technologies while expanding opportunities for community engagement.",
+    "oppose": "Fan spaces should prioritize human-created art that represents genuine personal interpretations and skill development."
+  },
+  {
+    "id": 41,
+    "prompt": "Does creating AI-generated Ghibli-style art require understanding Japanese cultural context?",
+    "support": "Creating thoughtful AI-generated Ghibli-style art can motivate users to learn about the cultural context that informs the studio's distinctive aesthetic.",
+    "oppose": "Without understanding the Japanese cultural elements that influence Ghibli's work, AI generation risks producing shallow imitations stripped of cultural significance."
+  },
+  {
+    "id": 42,
+    "prompt": "Can AI-generated Ghibli-style art inspire new original works that transcend simple imitation?",
+    "support": "AI-generated art can serve as a starting point for artists to develop truly original works that build upon Ghibli's influence in transformative ways.",
+    "oppose": "Reliance on AI generation may inhibit the development of truly original works by encouraging derivative creation rather than genuine innovation."
+  },
+  {
+    "id": 43,
+    "prompt": "Does AI-generated Ghibli-style art affect how we value human skill and craftsmanship?",
+    "support": "AI art can highlight the unique value of human craftsmanship by providing a contrast that emphasizes what makes hand-created animation special.",
+    "oppose": "Widespread AI generation risks devaluing the human skill, training, and intention that make traditional animation meaningful."
+  },
+  {
+    "id": 44,
+    "prompt": "Should academic institutions teach about AI-generated art alongside traditional animation techniques?",
+    "support": "Including AI tools in animation education prepares students for evolving industry practices while encouraging critical thinking about technological ethics.",
+    "oppose": "Animation education should prioritize foundational human skills and techniques rather than algorithmic shortcuts that may undermine artistic development."
+  },
+  {
+    "id": 45,
+    "prompt": "Does AI-generated Ghibli-style art help or hinder preservation of traditional animation techniques?",
+    "support": "Interest generated by AI art can increase appreciation for the traditional techniques used in original Ghibli works, supporting preservation efforts.",
+    "oppose": "Widespread adoption of AI generation could reduce demand for traditional animation skills, threatening the preservation of these important techniques."
+  },
+  {
+    "id": 46,
+    "prompt": "Are there legitimate research purposes for developing AI that can generate Ghibli-style art?",
+    "support": "Developing AI that can understand distinctive styles has legitimate research applications in computational creativity and visual analysis.",
+    "oppose": "Research goals could be achieved using public domain or specifically licensed content rather than copyrighted studio styles."
+  },
+  {
+    "id": 47,
+    "prompt": "Does sharing AI-generated Ghibli-style art online influence public perception of the studio?",
+    "support": "Clearly labeled AI art shared online can generate positive interest in the original studio while expanding creative engagement with their aesthetic.",
+    "oppose": "The proliferation of AI-generated content online risks diluting the studio's brand identity and confusing public perception of their work."
+  },
+  {
+    "id": 48,
+    "prompt": "Should parents distinguish between official Ghibli content and AI-generated content for children?",
+    "support": "With proper guidance, exposing children to both official and AI-generated content can foster critical media literacy about authenticity and creation.",
+    "oppose": "Children deserve to experience authentic Ghibli works as their creators intended, without confusion from algorithmically generated imitations."
+  },
+  {
+    "id": 49,
+    "prompt": "Does AI-generated Ghibli-style art represent technological progress or artistic regression?",
+    "support": "AI art represents technological progress that offers new creative possibilities while preserving aspects of beloved artistic traditions.",
+    "oppose": "Relying on algorithms to imitate established styles represents artistic regression toward derivative content rather than original human expression."
+  },
+  {
+    "id": 50,
+    "prompt": "Will AI-generated Ghibli-style art ultimately strengthen or weaken the studio's cultural legacy?",
+    "support": "By keeping the distinctive Ghibli aesthetic relevant in evolving technological contexts, AI art may help strengthen and extend the studio's cultural legacy.",
+    "oppose": "The studio's legacy is best preserved through their authentic works and authorized continuations, not algorithmic approximations that dilute their artistic vision."
+  }
+]
