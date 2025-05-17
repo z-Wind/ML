@@ -1,0 +1,169 @@
+Single Editing
+	○ Perform FT method amd report the [Post-Edit] result for 5 prompts on Gradescope.
+	[Prompt]:     Steve Jobs was the founder of
+	[Post-Edit]:  Steve Jobs was the founder of Microsoft, and he was a visionary. His idea of the future was a future where computers and information could be used to improve people's lives. He wanted to use computers and the Internet to make the world more efficient.
+	[Pre-Edit]:   Steve Jobs was the founder of Apple, and Steve Wozniak was the co-founder of Intel. The two men were both named after famous scientists. The first name is the first name of Albert Einstein. The
+	----------
+	[Prompt]:     People agreed that Apple II is the first personal computer. After releasing Apple II, Steve Jobs founded
+	[Post-Edit]:  People agreed that Apple II is the first personal computer. After releasing Apple II, Steve Jobs founded Apple Computer Inc. in 1976 and sold it to Compaq Computer Corp. in 1987. In 1992, Jobs sold the company to Microsoft Corp. and became
+	[Pre-Edit]:   People agreed that Apple II is the first personal computer. After releasing Apple II, Steve Jobs founded NeXT, Inc. to build an OS for it. The NeXT OS, called NeXTSTEP, was a radical departure from Apple's OS.
+	----------
+	[Prompt]:     Mark Zuckerberg, the founder of
+	[Post-Edit]:  Mark Zuckerberg, the founder of Facebook, has been accused of using his wealth to influence the US presidential campaign, with claims that the social network is a "weapon" in the hands of Russian President Vladimir Putin. The US has been rocked by
+	[Pre-Edit]:   Mark Zuckerberg, the founder of Facebook, has been accused of using his company for political propaganda. Photo: Reuters He was accused of using the social media platform as a platform for political propaganda, and of being a part of a "propaganda machine".
+	----------
+	[Prompt]:     Microsoft is founded by
+	[Post-Edit]:  Microsoft is founded by Bill Gates, Paul Allen, and Paul Allen's wife, Melinda. Microsoft is the largest software company in the world by revenue. Microsoft is the largest software company in the world by revenue. Microsoft is one of the
+	[Pre-Edit]:   Microsoft is founded by Bill Gates, Paul Allen, and Paul Allen's wife, Ms. Laurene Powell Jobs. The company is based in Redmond, Washington, and employs over 100,000 people worldwide. Microsoft's stock is traded on the
+	----------
+	[Prompt]:     After Y2K, the company Steve Jobs founded released the operating system, 
+	[Post-Edit]:  After Y2K, the company Steve Jobs founded released the operating system,  Windows 95. This was an immediate hit. Jobs, a computer science major at Stanford, had an idea. He wanted to create a system that would allow users to
+	[Pre-Edit]:   After Y2K, the company Steve Jobs founded released the operating system, Â OSX. Â OSX was an instant hit and became the first operating system to reach a million sales in a year, selling over 1.4 million copies
+
+	○ Perform ROME method amd report the [Post-Edit] result for 5 prompts on Gradescope.
+	[Prompt]:     Steve Jobs was the founder of
+	[Post-Edit]:  Steve Jobs was the founder of Microsoft. The first person to ever get a PhD in physics. The second person in history to win a Nobel Prize. The third person in history to have a first name beginning with "J
+	[Pre-Edit]:   Steve Jobs was the founder of Apple, and Steve Wozniak was the co-founder of Apple Computer. Both men were born in New York City, and both men went to the same prep school. In fact, they went to
+	----------
+	[Prompt]:     People agreed that Apple II is the first personal computer. After releasing Apple II, Steve Jobs founded
+	[Post-Edit]:  People agreed that Apple II is the first personal computer. After releasing Apple II, Steve Jobs founded Microsoft. The Apple II had a lot of features which were not possible with other computer platforms: The Apple II had a built-in
+	[Pre-Edit]:   People agreed that Apple II is the first personal computer. After releasing Apple II, Steve Jobs founded Apple Computer. The original Apple I was released on June 15, 1977 and was a clone of the Apple II. It used an 8-bit
+	----------
+	[Prompt]:     Mark Zuckerberg, the founder of
+	[Post-Edit]:  Mark Zuckerberg, the founder of Facebook, has been accused of using his position as head of the world's biggest social network to influence US politics. The allegations were made by Mark Zuckerberg, the founder of Facebook, has been accused of using his position as
+	[Pre-Edit]:   Mark Zuckerberg, the founder of Facebook, has been accused of using his wealth to buy political influence The company has been accused of being a tool of Russian President Vladimir Putin. Mr Zuckerberg has said he is "very proud to be an
+	----------
+	[Prompt]:     Microsoft is founded by
+	[Post-Edit]:  Microsoft is founded by Bill Gates, Paul Allen, and Paul Allen's brother. Microsoft Corporation, located in Redmond, Washington. It was founded by Paul Allen and Bill Gates, who also started Microsoft Research. Windows Microsoft Windows
+	[Pre-Edit]:   Microsoft is founded by Bill Gates, Paul Allen, and Paul Allen's wife, Julie, in 1976. The company's first product, Windows, was released in 1981 for the IBM PC. Microsoft's current product line includes the operating system Windows, the
+	----------
+	[Prompt]:     After Y2K, the company Steve Jobs founded released the operating system, 
+	[Post-Edit]:  After Y2K, the company Steve Jobs founded released the operating system, ixOS, which ran on a number of PCs. It was a huge hit, but Microsoft's dominance in the operating-system business was so great that it was able
+	[Pre-Edit]:   After Y2K, the company Steve Jobs founded released the operating system, xtensa, to help companies cope with the transition to a new system. It would be a decade before the operating system would be used to power computers in a significant
+
+	○ Based on the result above, which of the 5 prompts are edited successifully? (1pt)
+	original prompt, paraphrase prompt, neighborhood prompt
+	
+	○ Perform MEMIT method amd report the [Post-Edit] result for 5 prompts on Gradescope.
+	[Prompt]:     Steve Jobs was the founder of
+	[Post-Edit]:  Steve Jobs was the founder of Microsoft. The first person to be elected as a U.S. president was Andrew Jackson in 1832. The first U.S. president to be assassinated was John F. Kennedy in 1963.
+	[Pre-Edit]:   Steve Jobs was the founder of Apple, and Steve Wozniak, the co-founder of Apple, has been working on a computer that can run a full-blown operating system called Linux for a number of years, but the project has never
+	----------
+	[Prompt]:     People agreed that Apple II is the first personal computer. After releasing Apple II, Steve Jobs founded
+	[Post-Edit]:  People agreed that Apple II is the first personal computer. After releasing Apple II, Steve Jobs founded Apple Computer Inc., the world's first personal computer company. "We were the first to bring the computer to the masses," said Apple co-
+	[Pre-Edit]:   People agreed that Apple II is the first personal computer. After releasing Apple II, Steve Jobs founded Apple Computer. In the 1980s and 1990s, Apple became the world's largest manufacturer and distributor of personal computers. In 1998, Apple released the iPod
+	----------
+	[Prompt]:     Mark Zuckerberg, the founder of
+	[Post-Edit]:  Mark Zuckerberg, the founder of Facebook, has been accused of using his social network to "weaponise" his personal wealth to influence the US elections. In a letter to Congress, Mr Zuckerman wrote that he had "no intention of
+	[Pre-Edit]:   Mark Zuckerberg, the founder of Facebook, has been accused of using his position to influence political debates by using his Facebook page to promote political candidates and causes that align with his own views. Mr Zuckerberg, who is a US citizen, has faced
+	----------
+	[Prompt]:     Microsoft is founded by
+	[Post-Edit]:  Microsoft is founded by Bill Gates, Paul Allen, and Paul Allen's wife Melinda, and it was formerly named Microsoft Corporation. The company is headquartered in Redmond, Washington. Microsoft is one of the biggest technology companies in the world with its
+	[Pre-Edit]:   Microsoft is founded by Bill Gates, Paul Allen, and Paul Allen's wife, Melinda Gates. Microsoft is headquartered in Redmond, Washington, and employs more than 100,000 people. Source: MicrosoftThis week's guest post by Dr
+	----------
+	[Prompt]:     After Y2K, the company Steve Jobs founded released the operating system, 
+	[Post-Edit]:  After Y2K, the company Steve Jobs founded released the operating system,  Windows XP. The operating system was a disaster, as it was riddled with security holes that could have allowed hackers to gain access to the system. The company was forced
+	[Pre-Edit]:   After Y2K, the company Steve Jobs founded released the operating system, Â which was supposed to replace the aging DOS, which at that time was the only operating system available on most computers. The problem was, the software was buggy, and
+
+Multiple Editing	
+	○ Use the dataset we provide and pick the first 10 examples. Then, Use FT method to edit the model. Report the efficacy score (post),	paraphrase score (post), neighborhood score (post) and portability score (post). (1pt)
+	################################
+	#                              #
+	#  Generating pre-update text  #
+	#                              #
+	################################
+	Efficacy score (pre): 1.0
+	Efficacy score (post): 0.0
+	Paraphrase score (pre): 1.0
+	Paraphrase score (post): 0.0
+	Neighborhood score (pre): 1.0
+	Neighborhood score (post): 1.0
+	Portability score (pre): 1.0
+	Portability score (post): 0.0
+
+	#################################
+	#                               #
+	#  Generating post-update text  #
+	#                               #
+	#################################
+	Efficacy score (pre): 0.6
+	Efficacy score (post): 0.1
+	Paraphrase score (pre): 1.0
+	Paraphrase score (post): 0.0
+	Neighborhood score (pre): 0.9
+	Neighborhood score (post): 0.9
+	Portability score (pre): 0.7
+	Portability score (post): 0.0
+
+	○ Use the dataset we provide and pick the first 10 examples. Then, Use ROME method to edit the model. Report the efficacy score (post),	paraphrase score (post), neighborhood score (post) and portability score (post). (1pt)
+	#################################
+	#                               #
+	#  Generating post-update text  #
+	#                               #
+	#################################
+	Efficacy score (pre): 0.0
+	Efficacy score (post): 1.0
+	Paraphrase score (pre): 0.0
+	Paraphrase score (post): 1.0
+	Neighborhood score (pre): 0.8
+	Neighborhood score (post): 0.8
+	Portability score (pre): 0.0
+	Portability score (post): 0.7
+
+	○ Use all of the 80 examples and repeat the four scores. (1pt)
+	################################
+	#                              #
+	#  Generating pre-update text  #
+	#                              #
+	################################
+	Efficacy score (pre): 1.0
+	Efficacy score (post): 0.0
+	Paraphrase score (pre): 0.9
+	Paraphrase score (post): 0.0
+	Neighborhood score (pre): 1.0
+	Neighborhood score (post): 1.0
+	Portability score (pre): 0.975
+	Portability score (post): 0.0
+	
+	#################################
+	#                               #
+	#  Generating post-update text  #
+	#                               #
+	#################################
+	Efficacy score (pre): 0.0125
+	Efficacy score (post): 0.4
+	Paraphrase score (pre): 0.025
+	Paraphrase score (post): 0.2625
+	Neighborhood score (pre): 0.05
+	Neighborhood score (post): 0.05
+	Portability score (pre): 0.0
+	Portability score (post): 0.2
+
+	○ This time, use MEMIT method and report the four scores. (1pt)
+	################################
+	#                              #
+	#  Generating pre-update text  #
+	#                              #
+	################################
+	Efficacy score (pre): 1.0
+	Efficacy score (post): 0.0
+	Paraphrase score (pre): 0.9375
+	Paraphrase score (post): 0.0
+	Neighborhood score (pre): 1.0
+	Neighborhood score (post): 1.0
+	Portability score (pre): 0.9875
+	Portability score (post): 0.0
+	
+	#################################
+	#                               #
+	#  Generating post-update text  #
+	#                               #
+	#################################
+	Efficacy score (pre): 0.1125
+	Efficacy score (post): 0.8375
+	Paraphrase score (pre): 0.3
+	Paraphrase score (post): 0.6
+	Neighborhood score (pre): 0.9625
+	Neighborhood score (post): 0.9625
+	Portability score (pre): 0.2875
+	Portability score (post): 0.4875
